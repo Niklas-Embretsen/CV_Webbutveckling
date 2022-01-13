@@ -1,0 +1,307 @@
+﻿@model CV_Webbutveckling.Models.KursSearchModel
+
+@{
+    ViewData["Title"] = "Utbildning och kurser";
+}
+
+<div class="container mt-3">
+
+    <div align="center">
+        <div class="btn-group">
+            <a asp-action="OmMig" type="button" class="btn btn-primary">Om mig</a>
+            <a asp-action="ErfarenhetKunskaper" type="button" class="btn btn-primary">Erfarenhet och kunskaper</a>
+            <a asp-action="UtbildningKurser" type="button" class="btn btn-primary active">Utbildning och kurser</a>
+        </div>
+    </div>
+
+    <div align="center">
+        <div class="container container-main mt-2">
+            <section>
+                <header class="page-header">
+                    <h1>Utbildning och kurser</h1>
+                </header>
+            </section>
+        </div> <!-- Container -->
+    </div><!--Rubrik-->
+
+    <h2>Utbildningar jag gått</h2>
+    <div id="Utbildningar_Jag_Gått">
+        <a href="#NET-utvecklare" class="btn btn-primary" data-bs-toggle="collapse">
+            .NET-utvecklare(pågående högskoleutbildning)
+        </a><!--a ".NET-utvecklare"-->
+        <div id="NET-utvecklare" class="collapse">
+            <h3>Beskrivning</h3>
+            <p>
+                Tvåårig yrkesutbildning i programmering där man får lära sig att utveckla databaser,
+                webbplatser och applikationer. Programmeringsspråk som används i utbildningen är C#,
+                SQL och HTML/JavaScript/CSS. Jag ligger i fas med utbildningen och har klarat alla
+                kurser hittills.
+            </p>
+            <div class="row">
+                <div class="col">
+                    <h5>Startdatum</h5>
+                </div>
+                <div class="col">
+                    <h5>Slutdatum</h5>
+                </div>
+                <div class="col">
+                    <h5>YH-poäng avklarade</h5>
+                </div>
+                <div class="col">
+                    <h5>YH-poäng totalt</h5>
+                </div>
+                <div class="col">
+                    <h5>Stad</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>2020-12</p>
+                </div>
+                <div class="col">
+                    <p>2022-12</p>
+                </div>
+                <div class="col">
+                    <p>170</p>
+                </div>
+                <div class="col">
+                    <p>400</p>
+                </div>
+                <div class="col">
+                    <p>Gävle</p>
+                </div>
+            </div>
+        </div><!--div ".NET-utvecklare"-->
+        <br />
+
+        <a href="#Teknisk-Fysik" class="btn btn-info" data-bs-toggle="collapse">
+            Teknisk Fysik(Inte slutförd. Har läst motsvarande ca 3 av 5 år)
+        </a><!--a "Teknisk Fysik"-->
+        <div id="Teknisk-Fysik" class="collapse">
+            <h3>Beskrivning</h3>
+
+            <p>
+                Jag läste Teknisk Fysik på tre olika universitet (Uppsala, Luleå och Linköping).
+                <br />
+                <br />
+                Innehållet i utbildningen var ungefär samma på de olika universiteten.
+                Teknisk fysik är en bred civilingenjörsutbildning med framför
+                allt mycket matematik, fysik och även programmering. Jag gick inte klart utbildningen,
+                men jag har läst ca 260 högskolepoäng. P.g.a. visst överlapp mellan
+                kurserna på de olika universiteten så kan man säga att det jag
+                läst ungefär motsvarar årskurs 1-2, halva årskurs 3 och
+                halva årskurs 4 av utbildningen.
+            </p>
+
+            <div id="Stader_Teknisk_Fysik">
+                <a href="#Linkoping" class="btn btn-primary" data-bs-toggle="collapse">
+                    Linköping
+                </a><!--a Linkoping-->
+                <div id="Linkoping" class="collapse">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Startdatum</h5>
+                            <p>2010-09</p>
+                        </div>
+                        <div class="col">
+                            <h5>Slutdatum</h5>
+                            <p>2014-03</p>
+                        </div>
+                        <div class="col">
+                            <h5>Högskolepoäng</h5>
+                            <p>131.5</p>
+                        </div>
+                    </div>
+                </div><!--div Linkoping-->
+                <br />
+
+                <a href="#Lulea" class="btn btn-primary" data-bs-toggle="collapse">
+                    Luleå
+                </a><!--a Luleå-->
+                <div id="Lulea" class="collapse">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Startdatum</h5>
+                            <p>2006-09</p>
+                        </div>
+                        <div class="col">
+                            <h5>Slutdatum</h5>
+                            <p>2008-06</p>
+                        </div>
+                        <div class="col">
+                            <h5>Högskolepoäng</h5>
+                            <p>67.5</p>
+                        </div>
+                    </div>
+                </div><!--div Luleå-->
+                <br />
+
+                <a href="#Uppsala" class="btn btn-primary" data-bs-toggle="collapse">
+                    Uppsala
+                </a><!--a Uppsala-->
+                <div id="Uppsala" class="collapse">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Startdatum</h5>
+                            <p>2004-09</p>
+                        </div>
+                        <div class="col">
+                            <h5>Slutdatum</h5>
+                            <p>2006-04</p>
+                        </div>
+                        <div class="col">
+                            <h5>Högskolepoäng</h5>
+                            <p>63.8</p>
+                        </div>
+                    </div>
+                </div><!--div Uppsala-->
+            </div><!--"Städer Teknisk Fysik"-->
+        </div><!--div "Teknisk Fysik"-->
+        <br />
+
+        <a href="#Naturvetenskaplig-Linje" class="btn btn-success" data-bs-toggle="collapse">
+            Naturvetenskaplig linje (gymnasieutbildning)
+        </a><!--a "Naturvetenskaplig linje"-->
+        <div id="Naturvetenskaplig-Linje" class="collapse">
+            <h3>Beskrivning</h3>
+            <p>
+                Studieförberedande gymnasieutbildning med focus mot NO-ämnen och matematik.
+            </p>
+            <div class="row">
+                <div class="col">
+                    <h5>StartTermin</h5>
+                    <p>HT 2001</p>
+                </div>
+                <div class="col">
+                    <h5>SlutTermin</h5>
+                    <p>VT 2004</p>
+                </div>
+                <div class="col">
+                    <h5>Stad</h5>
+                    <p>Nyköping</p>
+                </div>
+            </div>
+        </div><!--div "Naturvetenskaplig linje"-->
+    </div><!--Utbildningar jag gått-->
+
+    <h2>Kurser jag gått</h2>
+    <div id="Kurser_Jag_Gått">
+        <a href="#Kurser_CollapseDiv" class="btn btn-danger" data-bs-toggle="collapse" >
+            Kurser jag gått
+        </a><!--a Kurser_CollapseDiv-->
+        <div id="Kurser_CollapseDiv" class="collapse">
+            <form asp-controller="OnlineCV" asp-action="UtbildningKurser" method="get">
+                <p>
+                    <input id="kurserDiv_IsCollapsed_Input" type="hidden" asp-for="KurserDiv_IsCollapsed" />
+                    <!--Hjälp-input-fält för att se till att "Kurser_CollapseDiv"-diven förblir-->
+                    <!--kollapsad efter varje sökning-->
+                    <!--(Så att man inte måste återkollapsa "Kurser_CollapseDiv"-diven varje -->
+                    <!--gång man söker på något).-->
+
+                    <select asp-for="SöktÄmne" asp-items="Model.Ämnen">
+                        <option value="">Alla</option>
+                    </select>
+
+                    <select asp-for="SöktSkola" asp-items="Model.Skolor">
+                        <option value="">Alla</option>
+                    </select>
+
+                    Kursnamn: <input type="text" asp-for="SöktKursnamn" />
+                    <input type="submit" value="Filter" />
+                </p>
+            </form>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Kurser[0].Namn)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Kurser[0].Kurskod)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Kurser[0].Ämne)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Kurser[0].Skola)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Kurser[0].Betyg)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Kurser[0].Beskrivning)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Kurser[0].Länk)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Kurser[0].DatumKursAvslutad)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Kurser[0].Poäng)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Kurser[0].PoängTyp)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Kurser)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Namn)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Kurskod)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Ämne)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Skola)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Betyg)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Beskrivning)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Länk)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DatumKursAvslutad)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Poäng)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PoängTyp)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div><!--div Kurser_CollapseDiv-->
+
+    </div>
+</div>
+
+@if (Model.KurserDiv_IsCollapsed == true)
+@*Kollapsar "Kurser_CollapseDiv"-diven efter att man gjort en sökning*@
+{
+    <script type="text/javascript">
+        document.getElementById("Kurser_CollapseDiv").setAttribute("class", "collapse show");
+    </script>
+}
+
+@*Sätter "kurserDiv_IsCollapsed_Input" value till "true" så att "Kurser_CollapseDiv"-diven ska 
+  förbli kollapsad efter att man gjort en sökning bland kurserna.*@
+<script type="text/javascript">
+
+    document.getElementById("kurserDiv_IsCollapsed_Input").value = "true";
+
+</script>

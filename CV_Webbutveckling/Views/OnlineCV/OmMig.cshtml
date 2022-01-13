@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Om mig";
+}
+
+<div class="container mt-3">
+
+    <div align="center">
+        <div class="btn-group">
+            <a asp-action="OmMig" type="button" class="btn btn-primary active">Om mig</a>
+            <a asp-action="ErfarenhetKunskaper" type="button" class="btn btn-primary">Erfarenhet och kunskaper</a>
+            <a asp-action="UtbildningKurser" type="button" class="btn btn-primary">Utbildning och kurser</a>
+        </div>
+    </div>
+
+    <div align="center">
+        <div class="container container-main mt-2">
+            <section>
+                <img src="~/Bilder/wagtail 3.jpg" class="image-profile rounded-circle" width="480px" height="320px">
+                <header class="page-header">
+                    <h1>Niklas Embretsen</h1>
+                </header>
+            </section>
+        </div> <!-- Container -->
+    </div>
+
+    <div class="row">
+        <!-- row 1 start -->
+        <section class="col-md-7">
+
+            <h2><strong>Om mig</strong></h2>
+            <p>
+                Jag heter Niklas Embretsen.<br>
+                Jag läser en tvåårig utbildning i programmering på teknikhögskolan i Gävle.<br>
+                Jag har precis börjat min tredje termin.<br>
+                Jag trivs bra.<br>
+                Jag har min första praktik i februari 2022.<br>
+                Sädesärlan är min favoritfågel.
+            </p>
+        </section> <!-- div col md 7 -->
+        <aside class="col-md-5 box">
+
+            <h2><strong>Kontakt information</strong></h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <i class="bi bi-telephone-fill"></i> Telefonnummer
+                        </div>
+                        <div class="col-sm-7">
+                            072 858 73 65
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <i class="bi bi-envelope-fill"></i> Emailadress
+                        </div>
+                        <div class="col-sm-7">
+                            <a href="mailto:niklas.s.embretsen@gmail.com"> niklas.s.embretsen@gmail.se </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <i class="bi bi-house-fill"></i> Address
+                        </div>
+                        <div class="col-sm-7">
+                            Gnejsvägen 3<br />
+                            611 44 Nyköping
+                        </div>
+                    </div>
+                </li>
+            </ul><!-- ul list-group-->
+
+            <h2><strong>Filer för nedladdning</strong></h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+
+                    <a href="~/Wordfiler/skolbetyg och arbetsintyg.docx">
+                        Mitt CV
+                    </a>
+                </li>
+                <li class="list-group-item">
+
+                    <a href="~/Wordfiler/skolbetyg och arbetsintyg.docx">
+                        Skolbetyg och arbetsintyg
+                    </a>
+                </li>
+            </ul>
+
+            <h2><strong>Konton på internet</strong></h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="https://github.com/Niklas-Embretsen">
+                        Mitt Githubkonto
+                    </a>
+                </li>
+            </ul>
+        </aside> <!-- div col md 5 -->
+
+    </div> <!-- row 1 end -->
+
+</div>
+
+

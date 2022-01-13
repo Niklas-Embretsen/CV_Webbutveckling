@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "Erfarenhet och kunskaper";
+}
+
+<div class="container mt-3">
+
+    <div align="center">
+        <div class="btn-group">
+            <a asp-action="OmMig" type="button" class="btn btn-primary">Om mig</a>
+            <a asp-action="ErfarenhetKunskaper" type="button" class="btn btn-primary active">Erfarenhet och kunskaper</a>
+            <a asp-action="UtbildningKurser" type="button" class="btn btn-primary">Utbildning och kurser</a>
+        </div>
+    </div>
+
+    <div align="center">
+        <div class="container container-main mt-2">
+            <section>
+                <header class="page-header">
+                    <h1>Erfarenhet</h1>
+                </header>
+            </section>
+        </div> <!-- Container -->
+    </div>
+
+    <div id="Arbetslivserfarenhet" class="myRoundCorner">
+        <h3>Arbetslivserfarenhet</h3>
+        <h4>ABB (Sommarpraktik i Nyköping 2004, 2006 och 2010) </h4>
+        <h5>Beskrivning</h5>
+        <p>Jobbade med montering av olika komponenter för elmätare.</p>
+    </div>
+
+    <div id="Korkort" class="myRoundCorner">
+        <h3>Körkort</h3>
+        <p>Körkort B</p>
+    </div>
+
+    <div id="Kunskaper" class="myRoundCorner">
+        <h3>Kunskaper</h3>
+
+        <div class="progress">
+            <div class="progress-bar bg-primary" style="width:85%">Programmering goda kunskaper</div>
+        </div>
+
+        <a href="#Programmerings-sprak" class="btn btn-primary mb-2" data-bs-toggle="collapse">
+            Programmerings-språk
+        </a><!--a "Programmerings-språk"-->
+        <div id="Programmerings-sprak" class="collapse mb-2">
+
+            <div class="progress">
+                <div class="progress-bar bg-danger" style="width:90%">C# goda kunskaper</div>
+            </div>
+
+            <a href="#C-Sharp-Grenar" class="btn btn-danger mb-2" data-bs-toggle="collapse">
+                Grenar av C#
+            </a><!--a "C#-grenar"-->
+            <div id="C-Sharp-Grenar" class="collapse mb-2">
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width:80%">Entity Framework goda kunskaper</div>
+                </div><br>
+
+                <div class="progress border">
+                    <div class="progress-bar bg-warning" style="width:75%">ASP.NET Core goda kunskaper</div>
+                </div>
+            </div><!--div "C#-grenar"-->
+
+            <div class="progress border">
+                <div class="progress-bar bg-danger" style="width:85%">SQL goda kunskaper</div>
+            </div><br>
+
+            <div class="progress">
+                <div class="progress-bar bg-danger" style="width:85%">HTML/CSS/Javascript goda kunskaper</div>
+            </div><br />
+
+            <div class="progress">
+                <div class="progress-bar bg-danger" style="width:35%">C++ är bekant med det</div>
+            </div>
+            <p>Läste kursen (TDDC76 Programmering och datastrukturer 8.0Hp) i Linköping 2012</p>
+
+            <div class="progress">
+                <div class="progress-bar bg-danger" style="width:35%">Python är bekant med det</div>
+            </div>
+            <p>Läste kursen (SMD180 Introduktion till programmering 7.5Hp) i Luleå 2006</p>
+        </div><!--Programmerings-språk-->
+
+        <div class="progress">
+            <div class="progress-bar bg-primary" style="width:85%">Engelska flytande</div>
+        </div><br>
+
+        <div class="progress">
+            <div class="progress-bar bg-primary" style="width:90%">Matematik goda kunskaper</div>
+        </div><br>
+
+        <div class="progress">
+            <div class="progress-bar bg-primary" style="width:85%">Fysik goda kunskaper</div>
+        </div><br>
+    </div>
+</div><!--Container-->

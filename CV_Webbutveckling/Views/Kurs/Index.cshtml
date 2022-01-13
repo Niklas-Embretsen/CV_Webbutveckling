@@ -1,0 +1,89 @@
+﻿@model IEnumerable<CV_Webbutveckling.Models.Kurs>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Namn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kurskod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ämne)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Skola)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Betyg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Beskrivning)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Länk)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatumKursAvslutad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Poäng)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PoängTyp)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Namn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kurskod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ämne)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Skola)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Betyg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Beskrivning)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Länk)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatumKursAvslutad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Poäng)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PoängTyp)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
